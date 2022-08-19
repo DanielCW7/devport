@@ -102,7 +102,7 @@ const images = [
     { img: 'images/lens.JPG' },
     { img: 'images/shell.JPG' },
     { img: 'images/starbucks.JPG' },
-    { img: 'images/leaf.jpg' }
+    { img: 'images/leaf.JPG' }
 ]
 
 let i = 0
