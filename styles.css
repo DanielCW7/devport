@@ -588,6 +588,10 @@ footer span { align-self: center; }
     margin-top: 50px
   }
   .project-description { width: 400px; }
+  
+  .title-revealed {
+    transform: translateY(200px) !important;
+  }
 }
 
 /* mobile styles */
