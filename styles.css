@@ -59,8 +59,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-/*   scroll-snap-type: y mandatory; */
-/*   overflow-y: scroll; */
+  /* scroll-snap-type: y mandatory; */
+  /* overflow-y: scroll; */
   scroll-behavior: smooth;
   height: 100vh;
 }
@@ -539,8 +539,21 @@ footer span { align-self: center; }
 /* tablet styles */
 @media screen and (max-width: 900px) {
 
+
+  html, body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+
+  #hero p {
+    font-size: 1em;
+    margin-top: 20px
+  }
+  
   #options { display: none; }
-  #options-mobile {display: flex; justify-content: space-evenly;}
+  #options-mobile {display: flex;justify-content: space-evenly;}
+  
+
   #bio-container {
     flex-direction: column;
   }
@@ -587,17 +600,66 @@ footer span { align-self: center; }
     display: inline-block;
     margin-top: 50px
   }
-  .project-description { width: 400px; }
-  
+  .project-description {width: auto;}
+
   .title-revealed {
     transform: translateY(200px) !important;
   }
 }
 
 /* mobile styles */
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 620px) {
 
-  #options-mobile .selection { margin: 10px 0px; }
+  #hero {
+    padding: 0px 20px;
+  }
+
+  #options { display: none; }
+  #options-mobile {display: flex;flex-direction: row;}
+
+  #options-mobile a {
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px #d4d4d4 ;
+    width: 90%;
+    margin: 10px 0px;
+  }
+
+  #options-mobile .selection {
+    width: auto;
+    align-items: center;
+    padding: 10px 0px;
+  }
+
+  #options-mobile .selection > * {
+    margin: auto;
+  }
+
+
+  #bio-container {
+    flex-direction: column;
+  }
+
+  .selection h2::before {
+    display: none;
+  } 
+  
+  .selection h2,
+  .selection::before {
+    height: 120px 
+  }
+  
+  .selection h2:hover { 
+    color: var(--dark-grey-color); 
+  }
+
+  .selection p {
+    transform: translateY(0px);
+    transition-duration: .3s;
+    opacity: 1;
+    margin-top: 0px;
+  }
+  
+  #options-mobile .selection {margin: 10px 0px;/* padding: 0px 10px; */}
   #options-mobile .selection:hover h2:before { transform: scale(1); }
   #options-mobile .selection p { margin-bottom: 10px; }
 
