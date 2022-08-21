@@ -4,30 +4,6 @@ const bioImg = document.getElementById('bio-image')
 let counter = 0
 let image_counter = 0
 
-// detects if touchscreen is present
-// const isTouchDevice = () => {  
-//     return (('ontouchstart' in window) ||  
-//       (navigator.maxTouchPoints > 0) ||  
-//       (navigator.msMaxTouchPoints > 0));  
-//   } 
-//   console.log(isTouchDevice())
-
-
-// '#options-mobile .selection p'
-
-// function dots_appear(i) {
-//         let rando1 = Math.floor(Math.random() * 50) + 50;
-//         let rando2 = Math.floor(Math.random() * 50) + 50;
-//         let rando3 = Math.floor(Math.random() * 360) + 1;
-
-//         console.log(document.querySelector('.selection').children[2])
-
-//         document.querySelector('.selection').children[2].classList.add('orbit')
-
-// }
-
-
-
 
 const list = [
 
@@ -100,9 +76,9 @@ const list = [
 
 const images = [
     { img: 'images/lens.JPG' },
-    { img: 'images/shell.JPG' },
+    { img: 'images/coral.jpg' },
     { img: 'images/starbucks.JPG' },
-    { img: 'images/leaf.JPG' }
+    { img: 'images/leaf.jpg' }
 ]
 
 let i = 0
@@ -323,4 +299,4 @@ function downloaded() {
 }
 
 populate_desktop()
-setInterval(nextPhoto, 7000)
+setInterval(nextPhoto, 6000)
