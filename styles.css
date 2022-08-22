@@ -551,15 +551,53 @@ footer span { align-self: center; }
   }
   
   #options { display: none; }
-  #options-mobile {display: flex;justify-content: space-evenly;}
+  #options-mobile {display: flex;justify-content: center;}
   
+  #options-mobile a {
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px #d4d4d4;
+    width: 90%;
+    margin: 10px 0px;
+  }
 
+  #options-mobile .selection {
+    width: auto;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 150px;
+    /* padding: 10px 0px; */
+  }
+
+  #options-mobile .selection:hover h2:before { transform: scale(1); }
+  #options-mobile .selection p { margin-bottom: 10px; }
   #bio-container {
     flex-direction: column;
   }
 
+    .selection h2::before {
+    display: none;
+  } 
+  
+  .selection h2,
+  .selection::before {
+    height: 80px;
+  }
+  
+  .selection h2:hover { 
+    color: var(--dark-grey-color); 
+  }
+
+  .selection p {
+    transform: translateY(0px);
+    transition-duration: .3s;
+    opacity: 1;
+    margin: 0px 20px;
+  }
+  
   .selection:hover p {
-    margin-top: 0px;
+    margin: 0px;
     transform: translateY(10px);
     opacity: 1;
   }
@@ -580,13 +618,12 @@ footer span { align-self: center; }
   }
 
   #bio-text-container::-webkit-scrollbar {
-    width: 10px !important;
-    transform: translateY(30px) !important;
+    width: 5px !important;
   }
 
   #bio-text-container::-webkit-scrollbar-track {
     width: 10px !important;
-    margin: 10px;
+    margin: 40px !important;
   }
   
   #bio-text-container::-webkit-scrollbar-thumb {
@@ -614,56 +651,11 @@ footer span { align-self: center; }
     padding: 0px 20px;
   }
 
-  #options { display: none; }
-  #options-mobile {display: flex;flex-direction: row;}
-
-  #options-mobile a {
-    border-radius: 30px;
-    box-shadow: 0px 0px 20px #d4d4d4 ;
-    width: 90%;
-    margin: 10px 0px;
-  }
-
-  #options-mobile .selection {
-    width: auto;
-    align-items: center;
-    padding: 10px 0px;
-  }
-
-  #options-mobile .selection > * {
-    margin: auto;
-  }
-
-
   #bio-container {
     flex-direction: column;
   }
 
-  .selection h2::before {
-    display: none;
-  } 
-  
-  .selection h2,
-  .selection::before {
-    height: 120px 
-  }
-  
-  .selection h2:hover { 
-    color: var(--dark-grey-color); 
-  }
-
-  .selection p {
-    transform: translateY(0px);
-    transition-duration: .3s;
-    opacity: 1;
-    margin-top: 0px;
-  }
-  
-  #options-mobile .selection {margin: 10px 0px;/* padding: 0px 10px; */}
-  #options-mobile .selection:hover h2:before { transform: scale(1); }
-  #options-mobile .selection p { margin-bottom: 10px; }
-
-    #bio-image {
+  #bio-image {
     width: 100%;
     left: 0px;
     right: 0px;
@@ -680,4 +672,5 @@ footer span { align-self: center; }
     height: 60%;
     overflow-y: auto;
   }
+
 }
