@@ -175,6 +175,7 @@ section#resume h3,
   height: 200px;
   text-align: center;
   position: relative;
+  cursor: pointer;
 }
 
 .selection h2,
@@ -536,9 +537,8 @@ footer {
 
 footer span { align-self: center; }
 
-/* tablet styles */
+/* ===============================================================  tablet styles  */
 @media screen and (max-width: 900px) {
-
 
   html, body {
     scroll-snap-type: y mandatory;
@@ -642,10 +642,11 @@ footer span { align-self: center; }
   .title-revealed {
     transform: translateY(200px) !important;
   }
+
 }
 
-/* mobile styles */
-@media screen and (max-width: 620px) {
+/* ===============================================================  mobile styles  */
+ @media screen and (max-width: 620px) {
 
   #hero {
     padding: 0px 20px;
