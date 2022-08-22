@@ -280,8 +280,6 @@ function reveal() {
 function downloaded() {
     let resume = document.getElementById('resume-bbl-inner')
     let text = document.getElementById('resume-bbl-inner').children[7]
-    let svg1 = document.getElementById('resume-bbl-inner').children[0]
-    let svg2 = document.getElementById('resume-bbl-inner').children[1]
 
     let entire = document.querySelector('.resume-bbl')
     let dots = document.querySelectorAll('.res-bbl-1, .res-bbl-2, .res-bbl-3, .res-bbl-4, .res-bbl-5')
@@ -290,9 +288,6 @@ function downloaded() {
     entire.style.pointerEvents = 'none'
     
     if(window.innerWidth <= 900) {
-        // resume.children[0].style.animation = 'disappear .3s forwards'
-        // resume.children[1].style.animation = 'disappear .3s forwards'
-        
         text.innerText = 'Downloaded!'
         entire.style.background = 'var(--red-color)'
         collection.forEach(item => {
