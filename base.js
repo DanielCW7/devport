@@ -77,7 +77,7 @@ const images = [
     { img: 'images/lens.JPG' },
     { img: 'images/coral2.jpg' },
     { img: 'images/starbucks.JPG' },
-    { img: 'images/leaf.jpg' }
+    { img: 'images/leaf.JPG' }
 ]
 
 let i = 0
