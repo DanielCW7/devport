@@ -76,7 +76,7 @@ const list = [
 
 const images = [
     { img: 'images/lens.JPG' },
-    { img: 'images/coral.jpg' },
+    { img: 'images/coral2.jpg' },
     { img: 'images/starbucks.JPG' },
     { img: 'images/leaf.JPG' }
 ]
