@@ -239,7 +239,7 @@ section#resume h3,
   height: 65%;
   left: 40px;
   position: relative;
-  transition: ease-in-out all .5s;
+  transition: ease-in-out all 1s;
 }
 
 #bio-text-container {
