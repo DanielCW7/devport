@@ -6,18 +6,6 @@ let counter = 0
 let image_counter = 0
 let i = 0
 
-
-
-// async function startResumeDownload() {
-//         let url = "images/MyResume.pdf";
-//         let fileName = "My Document";
-//         const res = await fetch(url);
-//         const blob = await res.blob();
-//         saveAs(blob, fileName);
-// }
-// DL.addEventListener('click', function() {
-//     startResumeDownload()
-// })
 const list = [
 
     {
