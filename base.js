@@ -6,6 +6,18 @@ let counter = 0
 let image_counter = 0
 let i = 0
 
+
+
+// async function startResumeDownload() {
+//         let url = "images/MyResume.pdf";
+//         let fileName = "My Document";
+//         const res = await fetch(url);
+//         const blob = await res.blob();
+//         saveAs(blob, fileName);
+// }
+// DL.addEventListener('click', function() {
+//     startResumeDownload()
+// })
 const list = [
 
     {
@@ -276,6 +288,34 @@ function reveal() {
             item.children[1].className = 'project-description title-hidden'
         }
     })
+}
+
+function downloaded() {
+    let resume = document.getElementById('resume-bbl-inner')
+    let text = document.getElementById('resume-bbl-inner').children[7]
+
+    let entire = document.querySelector('.resume-bbl')
+    let dots = document.querySelectorAll('.res-bbl-1, .res-bbl-2, .res-bbl-3, .res-bbl-4, .res-bbl-5')
+    let collection = Array.from(dots)
+    
+    entire.style.pointerEvents = 'none'
+    
+    if(window.innerWidth <= 900) {
+        text.innerText = 'Downloaded!'
+        entire.style.background = 'var(--red-color)'
+        collection.forEach(item => {
+            item.style.background = 'var(--red-color)'
+        })
+    } else {
+        resume.children[0].style.animation = 'disappear .3s forwards'
+        resume.children[1].style.animation = 'disappear .3s forwards'
+        
+        text.innerText = 'Downloaded!'
+        entire.style.background = 'var(--red-color)'
+        collection.forEach(item => {
+            item.style.background = 'var(--red-color)'
+        })        
+    }
 }
 
 populate_desktop()
