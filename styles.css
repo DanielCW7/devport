@@ -67,7 +67,7 @@ body {
 
 section { 
   z-index: 10; 
-  height: 100vh;
+  height: 80vh;
   width: 100%;  
   scroll-snap-align: start;
 }
@@ -237,7 +237,7 @@ section#resume h3,
   background-size: cover;
   border-radius: 40px;
   width: 60%;
-  height: 65%;
+  min-height: 400px;
   left: 40px;
   position: relative;
   transition: ease-in-out all 1s;
@@ -543,6 +543,10 @@ footer span { align-self: center; }
   html, body {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+  }
+
+  section {
+    height: 100vh;
   }
 
   #hero p {
