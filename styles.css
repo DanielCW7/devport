@@ -351,21 +351,20 @@ ul#project-list-desktop {
 
 li.project-image {
   list-style-type: none;
-  width: 300px;
-  height: 200px;
+/*   width: 300px;
+  height: 200px; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 30px;
   position: absolute;
-  transition-delay: .1s;
+/*   transition-delay: .1s; */
   opacity: 1;
   box-shadow: 0px 0px 20px #d4d4d4;
   display: grid;
   align-content: center;
   justify-content: center;
-  transition: all .3s linear !important;
-  transform-origin: center;
+/*   transform-origin: center; */
 }
 
 .active { 
@@ -374,36 +373,33 @@ li.project-image {
   height: 300px !important;
   z-index: 15 !important; 
   opacity: 1 !important;
-  transition: all .3s linear !important;
 
 }
 
 .secondary-right,
 .secondary-left {
-  transform: translate(170%) scale(.9); 
+  transform: translateX(170%) scale(1); 
   width: 200px !important;
   height: 200px !important;
   z-index: 10 !important; 
   opacity: 1 !important;
-  transition: all .3s linear !important;
 
 }
 
-.secondary-left { transform: translate(-170%) scale(.9); transition: all .3s linear !important;
+.secondary-left { transform: translateX(-170%) scale(1);
 }
 
 .tertiary-right,
 .tertiary-left {
-  transform: translate(355%) scale(.8);
+  transform: translateX(355%) scale(1);
   width: 150px !important;
   height: 150px !important;
   z-index: 5 !important;
   opacity: 1 !important;
-  transition: all .3s linear !important;
 
 }
 
-.tertiary-left { transform: translate(-355%) scale(.8);  transition: all .3s linear !important;
+.tertiary-left { transform: translateX(-355%) scale(1);
 }
 
 .inactive-left,
@@ -412,12 +408,11 @@ li.project-image {
   height: 150px !important;
   z-index: 0 !important; 
   opacity: 0 !important;
-  transform: translate(-355%) scale(.8); 
-  transition: all .3s linear !important;
+  transform: translateX(-355%) scale(1); 
 
 }
 
-.inactive-right { transform: translate(355%) scale(.8);  transition: all .3s linear !important;
+.inactive-right { transform: translateX(355%) scale(1);
 }
 
 .arrow-container-desktop { height: 10%; }
