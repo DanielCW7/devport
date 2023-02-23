@@ -280,6 +280,7 @@ ul#project-list-desktop {
 /*   transform-style: preserve-3d;
   transition: all .3s ease-in-out; */
   transition-delay: .1s;
+  overflow: visible;
 }
 
 .project-btn-container {
