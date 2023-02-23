@@ -373,6 +373,7 @@ li.project-image {
   height: 300px !important;
   z-index: 15 !important; 
   opacity: 1 !important;
+  overflow: visible;
 
 }
 
