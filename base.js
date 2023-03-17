@@ -9,12 +9,20 @@ let i = 0
 const list = [
 
     {
+        title: 'React Weather app',
+        img: 'url(images/react_weather.png)',
+        demoLink: 'https://danielcw7.github.io/weather-app-v1/',
+        codeLink: 'https://github.com/DanielCW7/weather-app-v1',
+        desc: 'This was my most recent developer portfolio webpage, which was built mainly using Reactjs. It also helped me land my first job in web development!',
+        id:0
+    },
+    {
         title: 'React Portfolio',
         img: 'url(images/react_portfolio.png)',
         demoLink: 'https://danielcw7.github.io/devportfolio/',
         codeLink: 'https://github.com/DanielCW7/devportfolio',
-        desc: 'This was my most recent developer portfolio webpage, which was built mainly using Reactjs. It also helped me land my first job in web development!',
-        id:0
+        desc: 'This was my first project using Reactjs. I learned how to use the Reactjs library and it also helped me land my first job in web development!',
+        id:1
     },
     {
         title: 'Github Finder',
@@ -22,7 +30,7 @@ const list = [
         demoLink: 'https://danielcw7.github.io/github_finder/',
         codeLink: 'https://github.com/DanielCW7/github_finder.git',
         desc: 'This project was something I made alongside a Udemy instructor. Though I don\'t consider it a project that I made by myself, it does help having this as a Reactjs reference',
-        id:1
+        id:2
     },
     {
         title: 'Tic Tac Toe!',
@@ -30,7 +38,7 @@ const list = [
         demoLink: 'https://danielcw7.github.io/tictactoe/',
         codeLink: 'https://github.com/DanielCW7/tictactoe.git',
         desc: 'This was an interesting one. I tried using vanilla Javascript to build this app, but it quickly became garbled and unreadable. So I opted to learn some JQuery to help simplify my code!',
-        id:2
+        id:3
     },
     {
         title: 'Word Game',
@@ -38,7 +46,7 @@ const list = [
         demoLink: 'https://danielcw7.github.io/gameshow/',
         codeLink: 'https://github.com/DanielCW7/gameshow.git',
         desc: 'This game was a Treehouse Techdegree project that helped me learn a lot about Javascript and CSS animations.',
-        id:3
+        id:4
     },
     {
         title: 'Concrete Calculator',
@@ -46,7 +54,7 @@ const list = [
         demoLink: 'https://danielcw7.github.io/yield_calculator/',
         codeLink: 'https://github.com/DanielCW7/yield_calculator.git',
         desc: 'This one is fairly simple. It is a calculator designed to help you find out how much concrete you need for a construction project. Fun fact: My original focus was in concrete construction management.',
-        id:4
+        id:5
     },
     {
         title: 'Google UI',
@@ -54,7 +62,7 @@ const list = [
         demoLink: 'https://danielcw7.github.io/Google_home/',
         codeLink: 'https://github.com/DanielCW7/Google_home.git',
         desc: 'This project\'s purpose was to simply recreate the Google homepage with just HTML & CSS! It was a fun CSS challenge to undertake!',
-        id:5
+        id:6
     },
     {
         title: 'React Todo List',
@@ -62,15 +70,15 @@ const list = [
         demoLink: 'https://danielcw7.github.io/todo/',
         codeLink: 'https://github.com/DanielCW7/todo.git',
         desc: 'This todo list was built using Reactjs and it really helped me understand how to make changes to the DOM, which I did not have much experience with before.',
-        id:6
+        id:7
     },
     {
-    title: ' React Sorting Visualizer',
-    img: 'url(images/visualizer.png)',
-    demoLink: 'https://danielcw7.github.io/sorter/',
-    codeLink: 'https://github.com/DanielCW7/sorter.git',
-    desc: 'Easily the most entertaining of all my projects, the sorting visualizer! It was built with Reactjs and I spent quite a bit of time trying to figure out how to make this \'bubble sort\' algorithm work. As you can see, my hard work paid off!',
-    id:7
+        title: 'React Sorting Visualizer',
+        img: 'url(images/visualizer.png)',
+        demoLink: 'https://danielcw7.github.io/sorter/',
+        codeLink: 'https://github.com/DanielCW7/sorter.git',
+        desc: 'Easily the most entertaining of all my projects, the sorting visualizer! It was built with Reactjs and I spent quite a bit of time trying to figure out how to make this \"bubble sort\" algorithm work. As you can see, my hard work paid off!',
+        id:8
 }   
       
 ]
