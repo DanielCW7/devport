@@ -13,7 +13,7 @@ const list = [
         img: 'url(images/react_weather.png)',
         demoLink: 'https://danielcw7.github.io/weather-app-v1/',
         codeLink: 'https://github.com/DanielCW7/weather-app-v1',
-        desc: 'This was my most recent developer portfolio webpage, which was built mainly using Reactjs. It also helped me land my first job in web development!',
+        desc: 'This was my most recent project and arugably one of my top favorites. I used the Reactjs library, fetch API, and tailwind CSS to build a weather app! It delivers weather data and also weather/sports news!',
         id:0
     },
     {
