@@ -99,6 +99,10 @@ section#resume h3,
   overflow: hidden;
 }
 
+#projects {
+  overflow: visible;
+}
+
 #hero {
   text-align: center;
   background: linear-gradient(rgba(0,0,0,0),55% , var(--muted-white));
