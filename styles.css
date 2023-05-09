@@ -48,7 +48,7 @@
 
 a { cursor: pointer; text-decoration: none; }
 h1, h2, h3 { font-family: 'Ubuntu', sans-serif; }
-p { font-weight: 300; }
+/* p { font-weight: 400; } */
 .disabled { pointer-events: none; }
 
 html,
