@@ -100,7 +100,8 @@ section#resume h3,
 }
 
 #projects {
-  overflow: visible;
+  /* seems to cause the projects to overflow */
+  overflow: hidden;
 }
 
 #hero {
